@@ -28,6 +28,7 @@ public class Homework1 {
             System.out.println("Сумма отрицательная");
         }
     }
+
     public static void selectColor() {
         int data = 7;
         if (data <= 10) {
@@ -38,6 +39,7 @@ public class Homework1 {
             System.out.println("Зеленый");
         }
     }
+
     public static void compareNumbers() {
         int a = 7;
         int b = 5;
@@ -47,39 +49,39 @@ public class Homework1 {
             System.out.println("a < b");
         }
     }
+
     public static void addOrSubtractAndPrint(int initValue, int delta, boolean increment) {
         if (increment) {
             System.out.println(initValue + delta);
-        }
-        else {
+        } else {
             System.out.println(initValue - delta);
         }
     }
-public static void Star() {
-    Scanner scanner = new Scanner(System.in);
-    int n;
-    do {
-        System.out.println("Введите число от 1 до 5");
-        n = scanner.nextInt();
-    } while (!(n >= 0 && n <= 5));
-    System.out.println(n);
-    int result;
-    switch (n) {
-        case 1:
-            greetings();
-            break;
-        case 2:
-            checkSign(1, 2, 3);
-            break;
-        case 3:
-            selectColor();
-            break;
-        case 4:
-            compareNumbers();
-            break;
-        case 5:
-            addOrSubtractAndPrint(1, 2, true);
-            break;
+    public static void Star() {
+        Scanner scanner = new Scanner(System.in);
+        int n;
+        do {
+            System.out.println("Введите число от 1 до 5");
+            n = scanner.nextInt();
+        } while (!(n >= 0 && n <= 5));
+        System.out.println(n);
+        int result;
+        switch (n) {
+            case 1:
+                greetings();
+                break;
+            case 2:
+                checkSign(1, 2, 3);
+                break;
+            case 3:
+                selectColor();
+                break;
+            case 4:
+                compareNumbers();
+                break;
+            case 5:
+                addOrSubtractAndPrint(1, 2, true);
+                break;
+        }
     }
-}
 }
